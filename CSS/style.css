@@ -1525,11 +1525,12 @@ html{
     justify-content: space-around;
     position: absolute;
     bottom: 0;
-    padding: 25px;
+    /* padding: 25px; */
     margin: auto;
 }
 .servicePG .box .service-card .image{
-    width: 70px;
+    width: 50px !important;
+    height: 50px !important;
     margin-right: 25px;
     margin-left: 20px;
 }
@@ -1825,14 +1826,8 @@ form .inputBox{
     .service-section .box-container .boxY{
         display: block;
     }
-    /* .service-section .box-container .box .service-card{
-        height: 9.5vh;
-    }
     .service-section .box-container .box .service-card .image{
-        width: 100px;
-    } */
-    .service-section .box-container .box .service-card .image{
-        width: 60px;
+        width: 50px;
     }
     .service-section .box-container .box .service-card{
         height: 110px;
@@ -1942,9 +1937,9 @@ form .inputBox{
         height: 110px;
     }
     .servicePG .box .service-card .image{
-        width: 60px;
+        width: 40px !important;
+        height: 40px !important;
     }
-
     /* CONTACT PAGE */
     .contactCards{
         grid-template-columns: 1fr 1fr;
@@ -2037,7 +2032,12 @@ form .inputBox{
         width: 90%;
         margin: auto;
     }
-    
+    .servicePG .box .service-card .image{
+        width: 30px !important;
+    }
+    .servicePG .box .service-card{
+        height: 110px;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -2148,8 +2148,11 @@ form .inputBox{
         grid-template-columns: 1fr;
         grid-column-gap: 20px;
     }
+    .service-section .box-container .box{
+        width: 17rem;
+    }
     .service-section .box-container .box .service-card .image{
-        width: 60px;
+        width: 50px;
     }
     .service-section .box-container .box .service-card{
         height: 110px;
@@ -2251,6 +2254,9 @@ form .inputBox{
         flex-direction: column;
         align-items: start;
     }
+    .benefitSect .benefit2 form{
+        margin-top: 20px !important;
+    }
     .benefitSect .benButtons .benefitBtn{
         margin-bottom: 10px;
     }
@@ -2274,11 +2280,14 @@ form .inputBox{
         bottom: -90px;
     }
     /* SERVICE PAGE */
+    .servicePG .box-container .box{
+        /* width: 17rem; */
+    }
     .servicePG .box .service-card{
         height: 110px;
     }
     .servicePG .box .service-card .image{
-        width: 60px;
+        width: 50px;
     }
     .steps{
         height: auto;
