@@ -125,6 +125,9 @@ html{
 .nav-hold .refLink{
     color: white !important;
 }
+#main-nav .navbar-nav .XX{
+    display: none !important;
+}
 .nav-link:hover{
     border-bottom: 1px solid white;
     transition: .3s ease-in !important; 
@@ -465,6 +468,9 @@ html{
 /* WHY CHOOSE US */
 .choose-section{
     margin-bottom: 70px !important;
+}
+.abtImg{
+    width: 50% !important;
 }
 .choose-section .container .banner-right{
     margin-left: 20px;
@@ -1819,11 +1825,21 @@ form .inputBox{
     .service-section .box-container .boxY{
         display: block;
     }
-    .service-section .box-container .box .service-card{
+    /* .service-section .box-container .box .service-card{
         height: 9.5vh;
     }
     .service-section .box-container .box .service-card .image{
         width: 100px;
+    } */
+    .service-section .box-container .box .service-card .image{
+        width: 60px;
+    }
+    .service-section .box-container .box .service-card{
+        height: 110px;
+    }
+    /* why choose us */
+    .abtImg{
+        width: 100% !important;
     }
     /* project sect */
     .projects .projectCarousel{
@@ -1922,17 +1938,11 @@ form .inputBox{
     }
 
     /* SERVICE PAGE */
-    .service-section .box-container .box .service-card .image{
-        width: 60px;
-    }
-    .service-section .box-container .box .service-card{
+    .servicePG .box .service-card{
         height: 110px;
     }
-    .servicePG .box .service-card{
-        height: 9.5vh;
-    }
     .servicePG .box .service-card .image{
-        width: 100px;
+        width: 60px;
     }
 
     /* CONTACT PAGE */
@@ -1998,12 +2008,7 @@ form .inputBox{
         width: 90%;
         margin: auto;
     }
-    /* .service-section .box-container .box .service-card{
-        height: 10.5vh;
-    }
-    .service-section .box-container .box .service-card .image{
-        width: 100px;
-    } */
+    
 
     /* pricing */
     .planHeader{
@@ -2032,18 +2037,14 @@ form .inputBox{
         width: 90%;
         margin: auto;
     }
-    .servicePG .box .service-card{
-        height: 10.5vh;
-    }
-    .servicePG .box .service-card .image{
-        width: 100px;
-    }
+    
 }
 
 @media screen and (max-width: 767px){
     .navbar-collapse {
         border-radius: 5px !important;
         margin-top: 10px !important;
+        margin-bottom: 15px !important;
         background-color: rgb(1, 12, 37) !important;
         height: auto !important;
     }
@@ -2105,6 +2106,12 @@ form .inputBox{
     .topNav{
         display: none;
     }
+    #main-nav .navbar-nav .XX{
+        display: block !important;
+    }
+    #main-nav .navbar-nav .pages{
+        display: none !important;
+    }
     .mobile-image{
         display: block !important;
     }
@@ -2126,6 +2133,12 @@ form .inputBox{
     }
     .carousel-control-next{
         display: none;
+    }
+    .desc2{
+        grid-template-columns: 1fr;
+    }
+    .content2{
+        display: none !important;
     }
     /* service sect */
     .service-section{
@@ -2169,7 +2182,7 @@ form .inputBox{
     }
     .options{
         width: 100% !important;
-        height: 40px !important;
+        height: auto !important;
         margin: 20px auto;
         font-size: 12px;
     }
@@ -2246,6 +2259,9 @@ form .inputBox{
         height: auto;
         flex-direction: column;
     }
+    .contentHold .descContent{
+        width: 100% !important;
+    }
     /* expert-sect */
     .expertSect .experts{
         grid-template-columns: 1fr;
@@ -2259,10 +2275,10 @@ form .inputBox{
     }
     /* SERVICE PAGE */
     .servicePG .box .service-card{
-        height: 13.5vh;
+        height: 110px;
     }
     .servicePG .box .service-card .image{
-        width: 100px;
+        width: 60px;
     }
     .steps{
         height: auto;
