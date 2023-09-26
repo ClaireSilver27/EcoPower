@@ -354,6 +354,7 @@ html{
     background-image: url(../IMG/portrait-happy-black-woman-solar-panel.jpg);
     background-size: cover;
     background-position: right;
+    background-repeat: no-repeat !important;
 }
 .hold{
     width: 100%;
@@ -398,14 +399,14 @@ html{
     display: none;
 }
 
-.service-section .box-container .box img{
+.service-section .box-container .box .serviceImg{
     height: 100%;
     width:100%;
     object-fit: cover;
 }
 .service-section .box-container .box .service-card{
     background-color: white;
-    height: 17vh;
+    height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -416,7 +417,6 @@ html{
     margin: auto;
 }
 .service-section .box-container .box .service-card .image{
-    width: 70px;
     margin-right: 25px;
     margin-left: 20px;
 }
@@ -485,6 +485,7 @@ html{
     background-image: var(--gradient) !important;
     background-size: 400% !important;
     background-position: right !important;
+    background-repeat: no-repeat !important;
     transition: background-position 0.5s !important;
 }
 .choose-section .container .row .but:hover,
@@ -502,7 +503,7 @@ html{
     background-image: linear-gradient( 75deg, #2b366dac, rgba(0, 0, 0, 0.635)), url('../img/counter2.jpg');
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-repeat: no-repeat !important;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -537,6 +538,7 @@ html{
     background-image: linear-gradient( 75deg, rgba(0, 0, 0, 0.443), rgba(0, 0, 0, 0.443)), url('../img/solar7.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -551,6 +553,7 @@ html{
     background-image: linear-gradient( 75deg, rgba(0, 0, 0, 0.443), rgba(0, 0, 0, 0.443)), url('../img/pexels-braeson-holland-12858693.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
@@ -566,6 +569,7 @@ html{
     background-image: linear-gradient( 75deg, rgba(0, 0, 0, 0.443), rgba(0, 0, 0, 0.443)), url('../img/home.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
@@ -581,6 +585,7 @@ html{
     background-image: linear-gradient( 75deg, rgba(0, 0, 0, 0.443), rgba(0, 0, 0, 0.443)), url('../img/solarPlant.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
@@ -698,7 +703,7 @@ html{
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.538);
     background-image: url(../IMG/bot-1.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-position: top ;
     cursor: default;
 }
@@ -711,7 +716,7 @@ html{
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.538);
     background-image: url(../IMG/bot-1.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-position: top;
     cursor: default;
 }
@@ -797,6 +802,7 @@ html{
     height: auto;
     background-image: linear-gradient( 75deg, rgba(0, 0, 0, 0.735), rgba(0, 0, 0, 0.735)), url('../img/happy1\ \(2\).jpg');
     background-size: cover;
+    background-repeat: no-repeat !important;
     background-position: top;
     overflow: hidden;
 }
@@ -945,6 +951,7 @@ html{
     background-image: linear-gradient( 75deg, #2b366dac, rgba(0, 0, 0, 0.735)), url('../img/counter2.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
     color: white !important;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1085,6 +1092,7 @@ html{
     background-image: linear-gradient( 75deg, #2b366dac, rgba(0, 0, 0, 0.735)), url('../img/abt2.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
     color: white;
     display: flex;
     align-items: center;
@@ -1110,6 +1118,7 @@ html{
     background-image: url(../IMG/abt2i.jpg) !important;
     background-size: cover;
     background-position: top;
+    background-repeat: no-repeat !important;
 }
 .abtContent{
     width: 100%;
@@ -1146,6 +1155,7 @@ html{
     background-image: linear-gradient( 75deg, rgba(0, 0, 0, 0.735), rgba(0, 0, 0, 0.735)), url('../img/landscape2.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -1197,6 +1207,7 @@ html{
     background-image: url(../IMG/featured-image-6.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
     border-right: 3px solid white;
     border-bottom: 3px solid white;
 }
@@ -1206,6 +1217,7 @@ html{
     background-image: url(../IMG/long3.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
     border-right: 3px solid #9baaf0;
     border-bottom: 3px solid #9baaf0;
 }
@@ -1213,6 +1225,7 @@ html{
     width: 170px;
     height: 170px;
     background-image: url(../IMG/banner-2.jpg);
+    background-repeat: no-repeat !important;
     background-size: cover;
     background-position: center;
     border-right: 3px solid #9baaf0;
@@ -1332,7 +1345,7 @@ html{
     color: white !important;
     padding: 15px;
     background: linear-gradient(75deg, rgb(15, 94, 214), rgb(1, 12, 37) );
-    /* background-image: var(--gradient) !important; */
+    background-repeat: no-repeat;
     border-radius: 10px !important;
     border: 1px solid var(--gradient2);
 }
@@ -1427,6 +1440,7 @@ html{
     background-image: linear-gradient(75deg, rgba(0, 0, 0, 0.731), #04091ec4), url('../IMG/client1.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat !important;
     color: white;
     text-align: center !important;
     padding-top: 250px;
@@ -1458,17 +1472,15 @@ html{
     background-image: linear-gradient( 75deg, #2b366dac, rgba(0, 0, 0, 0.735)), url('../img/nuno-marques-0GbrjL3vZF4-unsplash.jpg') !important;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
 }
 .serviceConnect{
     background-image: linear-gradient( 75deg, rgba(0, 0, 0, 0.735), rgba(0, 0, 0, 0.735)), url('../img/connect.jpg') !important;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
     color: white !important;
 }
-.serviceConnect h5{
-    /* color: #9baaf0 !important; */
-}
-
 /* Service Sect */
 .servicePG{
     width: 95%;
@@ -1586,6 +1598,7 @@ html{
     background-image: url(../IMG/earth1.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -1645,6 +1658,7 @@ html{
     background-image: linear-gradient( 75deg, rgba(0, 0, 0, 0.735), rgba(0, 0, 0, 0.735)), url('../img/smiley-man.jpg') !important;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
 }
 .connectForm{
     width: 100%;
@@ -1655,6 +1669,7 @@ html{
     background-image: linear-gradient( 75deg, rgba(255, 255, 255, 0.758), rgba(255, 255, 255, 0.758)), url('../img/earth2.png') !important;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat !important;
 }
 .contact{
     width: 100% !important;
@@ -1777,7 +1792,8 @@ form .inputBox{
     height: 400px;
     /* background-image: url(../IMG/mapIMG2.png);
     background-size: cover;
-    background-position: center; */
+    background-position: center; 
+    background-repeat: no-repeat !important; */
 }
 
 /* MEDIA QUERIES */
@@ -1906,6 +1922,12 @@ form .inputBox{
     }
 
     /* SERVICE PAGE */
+    .service-section .box-container .box .service-card .image{
+        width: 60px;
+    }
+    .service-section .box-container .box .service-card{
+        height: 110px;
+    }
     .servicePG .box .service-card{
         height: 9.5vh;
     }
@@ -1976,12 +1998,13 @@ form .inputBox{
         width: 90%;
         margin: auto;
     }
-    .service-section .box-container .box .service-card{
+    /* .service-section .box-container .box .service-card{
         height: 10.5vh;
     }
     .service-section .box-container .box .service-card .image{
         width: 100px;
-    }
+    } */
+
     /* pricing */
     .planHeader{
         text-align: center;
@@ -2112,12 +2135,13 @@ form .inputBox{
         grid-template-columns: 1fr;
         grid-column-gap: 20px;
     }
-    .service-section .box-container .box .service-card{
-        height: 13.5vh;
-    }
     .service-section .box-container .box .service-card .image{
-        width: 100px;
+        width: 60px;
     }
+    .service-section .box-container .box .service-card{
+        height: 110px;
+    }
+    
     /* counter */
     .counter{
         flex-direction: column;
