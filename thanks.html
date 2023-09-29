@@ -75,17 +75,6 @@
               <li class="nav-item XX px-2">
                 <a class="nav-link refLink" href="contact.html">Contact Us</a>
               </li>
-              <li class="nav-item pages px-2">
-                <a class="nav-link refLink" href="#"
-                  >Pages <i class="bi bi-caret-down-fill"></i
-                ></a>
-                <ul class="pages-menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="sevice.html">Services</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </li>
               <li class="nav-item px-2 ms-2 d-none d-md-inline">
                 <a class="btn btn-secondary nav-btn" href="contact.html"
                   >Contact Us</a
@@ -97,13 +86,19 @@
     </nav>
 
     <div class="my-ban">
-        <h1 class="mb-3">Thank You</h1>
+        <h1 class="mb-3">Thank You <span id = "name2"></span></h1>
         <h3 class="mb-5">Your Form Was successfully Submitted We Will Get Back To You</h3>
         <a href="index.html">
             <button>Home</button>
         </a>
     </div>
-  
+
+    <script>
+      window.addEventListener('load', () => {
+      let username = localStorage.getItem('name');
+      document.getElementById('name2').innerHTML = username; })
+    </script>
+
     <script src="./JS/bootstrap.bundle.js"></script>
     <script src="./JS/script.js"></script>
     <script src="./JS/aos.js"></script>

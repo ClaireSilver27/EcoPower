@@ -12,12 +12,15 @@ window.addEventListener("load", () =>{
    let left = document.querySelector(".left");
    let right = document.querySelector(".right");
    let ball = document.querySelector(".ball");
+//    let gif = document.querySelector (".ball-hold");
    
    setTimeout(() =>{
       left.style.width = "0";
       right.style.width = "0";
       ball.style.opacity = "0";
       pre.style.visibility = "hidden"
+    //   pre.style.display = 'none';
+    //   gif.style.display = 'none';
    }, 3000)
 })
 
@@ -234,6 +237,7 @@ function myvalid2(){
     }
     else{
         errorV.style.display = "none";
+        localStorage.setItem('name', name);
         return true;
     }
  }
@@ -245,7 +249,7 @@ const pros3 = document.querySelectorAll(".pro3");
 const observer = new IntersectionObserver((entries) =>{
    entries.forEach(entry =>{
       if(entry.intersectionRatio > 0){
-         entry.target.classList.add("mov")
+         entry.target.classList.add("mov");
       }
    })
 })

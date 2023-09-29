@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <!-- <div class="pre">
+    <div class="pre">
       <div class="preloader">
         <div class="ball-hold">
           <div class="ball"></div>
@@ -24,7 +24,7 @@
         <div class="left"></div>
         <div class="right"></div>
       </div>
-    </div> -->
+    </div>
     <div class="topNav container-fluid">
       <ul>
         <li>
@@ -85,17 +85,7 @@
             <li class="nav-item XX px-2">
               <a class="nav-link refLink" href="contact.html">Contact Us</a>
             </li>
-            <li class="nav-item pages px-2">
-              <a class="nav-link refLink" href="#"
-                >Pages <i class="bi bi-caret-down-fill"></i
-              ></a>
-              <ul class="pages-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </li>
+      
             <li class="nav-item px-2 ms-2 d-none d-md-inline">
               <a class="btn btn-secondary nav-btn" href="contact.html"
                 >Contact Us</a
@@ -115,15 +105,15 @@
     </div>
 
     <!-- ABOUT US -->
-    <section class="pb-5 mt-5" id="about">
+    <section class="pb-5" id="about">
       <div class="container-lg">
         <div class="about">
-          <div class="mt-5 aboutImg" data-aos="fade-up" data-aos-duration="1000">
+          <div class="mt-3 aboutImg" data-aos="fade-up" data-aos-duration="1000">
             <div class="aboutHold abtPage"></div>
           </div>
           <!-- col md-5 -->
           <div class="text-md-start aboutDesc" data-aos="fade-down" data-aos-duration="1000">
-            <h5 class="mt-5 abtHead">Get To Know Us</h5>
+            <h5 class="mt-3 abtHead">Get To Know Us</h5>
             <h4 class="display-6 mb-4 fw-medium">
               Providing Renewable Energy Solutions
             </h4>
@@ -179,10 +169,10 @@
           <div class="benefitBtn" id="mission" onclick="showMission ()">
             OUR MISSION
           </div>
-          <div class="benefitBtn" id="vision" onclick="showVision ()">
+          <div class="benefitBtn visBtn" id="vision" onclick="showVision ()">
             OUR VISION
           </div>
-          <div class="benefitBtn" id="goal" onclick="showGoal ()">OUR GOAL</div>
+          <div class="benefitBtn visBtn" id="goal" onclick="showGoal ()">OUR GOAL</div>
         </div>
         <div class="benefitDesc">
           <div class="contentHold BD1">
@@ -256,16 +246,17 @@
         </div>
       </div>
 
-      <div class="benefit2 pb-5 ms-sm-4" data-aos="zoom-in-up" data-aos-duration="1000">
+      <div class="benefit2 pb-5 " data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="form2">
         <form
           name="aboutForm"
           action="./thanks.html"
-          class="p-3 mb-5 mt-5"
+          class="p-3 mb-5 mt-5 pb-5"
           method="post"
           onsubmit="return myvalid()"
           data-netlify="true"
         >
-          <h3 class="text-center fw-bold mb-5">Request Form</h3>
+          <h3 class="text-center fw-bold mb-5 mt-3">Request Form</h3>
           <div class="div mb-5 formInput">
             <label for=""
               >What's Your Name? <span id="e1"> .pls lgkgk</span></label
@@ -294,6 +285,7 @@
             <button type="submit">Submit Request</button>
           </div>
         </form>
+        </div>
       </div>
     </div>
 

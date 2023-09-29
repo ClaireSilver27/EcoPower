@@ -51,22 +51,29 @@ html{
     }
 }
 .pre .preloader .ball-hold .ball{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 10px;
-    animation: bouncer 1.5s ease-in-out infinite;
+    width: 100px;
+    height: 100px;
+    /* background-color: white; */
+    border-radius: 100%;
+    animation: bouncer 2s ease-in-out infinite;
+    background-image: url(../IMG/logo-A.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 .pre .preloader .left{
     width: 50%;
     height: 100%;
-    background-color: #3E56D0;
+    background-color: #fff;
+    /* background-color: #3E56D0; */
     transition: 1.5s ease;
 }
 .pre .preloader .right{
     width: 50%;
     height: 100%;
-    background-color: #3E56D0;
+    background-color: #fff;
+    /* background-color: #3E56D0; */
     transition: 1.5s ease;
 }
 .topNav{
@@ -144,7 +151,7 @@ html{
 }
 .btnStyle{
     background-color: white !important;
-    color: #3E56D0 !important;
+    color: rgb(1, 12, 37) !important;
     border: 1px solid white !important;
 }
 .btnStyle:hover{
@@ -179,46 +186,7 @@ html{
     position: fixed;
     top: 0;
 }
-.service, .pages{
-    position: relative;
-}
-.service:hover .service-menu, .pages:hover .pages-menu{
-    display: block;
-    transition: 0.5s ease-in-out;
-    top: 40px;
-    opacity: 1;
-    visibility: visible;
-}
-.service .service-menu, .pages .pages-menu{
-    position: absolute;
-    top: 70px;
-    width: 200px;
-    height: auto;
-    background-color: white;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.381);
-    border-radius: 4px;
-    color: black !important;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0px 0px !important;
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-}
-.service .service-menu li, .pages .pages-menu li{
-    width: 100%;
-    padding: 15px 15px;
-    cursor: pointer;
-}
-.service .service-menu li:hover, .pages .pages-menu li:hover{
-    background:  linear-gradient(75deg, #3E56D0,  rgb(1, 12, 37));
-    color: white !important;
-}
-.service .service-menu li a, .pages .pages-menu li a{
-    text-decoration: none;
-    color: inherit !important;
-}
+
 
 /* banner sect */
 .banner-hold{
@@ -239,11 +207,19 @@ html{
     text-align: left !important;
     top: 25% !important;
 }
+.carousel-caption h5{
+    width: 90% !important;
+}
+.captionDesc{
+    line-height: 10px !important;
+    margin-left: 2px !important;
+}
 .contactBtn{
     width: 150px !important;
     height: 50px !important;
     background-color: rgb(1, 12, 37);
     border: 1px solid white; 
+    margin-top: 20px;
 }
 .contactBtn:hover{
     background: white !important;
@@ -313,7 +289,6 @@ html{
     width: 4px;
     height: inherit;
     background: linear-gradient(75deg, rgb(15, 94, 214), rgb(1, 12, 37) ) !important;
-    /* background-color: #3E56D0; */
     position: absolute;
     left: 0;
     transition: all 0.5s;
@@ -383,8 +358,8 @@ html{
 .service-section .box-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* gap: 50px; */
-    width: 90%;
+    gap: 40px;
+    width: 90% !important;
     margin: auto !important;
     margin-bottom: 40px;
 }
@@ -392,7 +367,7 @@ html{
 .service-section .box-container .box{
     overflow: hidden;
     border-radius: .5rem;
-    width:20rem;
+    width: auto !important;
     height:25rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
     position: relative;
@@ -467,22 +442,29 @@ html{
 
 /* WHY CHOOSE US */
 .choose-section{
-    margin-bottom: 70px !important;
+    margin-bottom: 20px !important;
 }
 .abtImg{
-    width: 50% !important;
-}
-.choose-section .container .banner-right{
-    margin-left: 20px;
+    width: auto !important;
+    height: auto !important;
 }
 .choose-section .container h3{
     color: var(--icn) !important;
     font-size: 20px !important;
 }
-.choose-section .container .row .but{
+.chooseSect{
+    width: 100%;
+    height: auto;
+    margin: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px;
+}
+.choose-section .container .but{
     padding: 15px !important;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.379);
-    width: 40% !important;
+    width: auto !important;
+    height: auto !important;
     font-size: 15px !important;
     border: 1px solid var(--gradient) !important;
     color: black !important;
@@ -494,13 +476,12 @@ html{
     background-repeat: no-repeat !important;
     transition: background-position 0.5s !important;
 }
-.choose-section .container .row .but:hover,
-.choose-section .container .row .but:focus{
+.choose-section .container .but:hover,
+.choose-section .container .but:focus{
     background-position: left !important;
     color: white !important;
     cursor: default;
 }
-
 
 /* COUNTER SECTION */
 .counter{
@@ -1319,10 +1300,11 @@ html{
 .benefitSect .benefit2{
     width: auto;
     height: auto;
+    /* background-color: rgba(216, 214, 214, 0.571); */
 }
 .benefitSect .benefit2 form{
     background-color: white;
-    width: 80%;
+    width: 70%;
     margin: auto;
     border-radius: 20px;
     box-shadow: 3px 5px 5px rgb(30, 29, 29);
@@ -1333,7 +1315,7 @@ html{
 }
 .benefitSect .benefit2 form div input{
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: #EAEBFF;
     border: none;
 }
@@ -1472,7 +1454,9 @@ html{
     background: linear-gradient(75deg, white, white) !important;
     color: black !important;
 }
-
+.my-ban #name2{
+    text-transform: capitalize;
+}
 /* SERVICE PAGE */
 .serviceBanner{
     background-image: linear-gradient( 75deg, #2b366dac, rgba(0, 0, 0, 0.735)), url('../img/nuno-marques-0GbrjL3vZF4-unsplash.jpg') !important;
@@ -1498,22 +1482,17 @@ html{
 .servPGH{
     color: #434547 !important;
 }
-.serviceWrap{
-    width: 100% !important;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-}
 .servicePG .box{
     overflow: hidden;
     border-radius: .5rem;
-    width:20rem;
-    height:25rem;
+    width: auto !important;
+    height: 25rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
     position: relative;
 }
 .servicePG .box img{
     height: 100%;
-    width:100%;
+    width: 100%;
     object-fit: cover;
 }
 .servicePG .box .service-card{
@@ -1525,17 +1504,21 @@ html{
     justify-content: space-around;
     position: absolute;
     bottom: 0;
-    /* padding: 25px; */
+    padding: 25px;
     margin: auto;
 }
 .servicePG .box .service-card .image{
     width: 50px !important;
     height: 50px !important;
-    margin-right: 25px;
-    margin-left: 20px;
+    margin-right: 20px !important;
+    /* margin-left: 20px !important; */
 }
-.servicePG .box .service-card .card-title{
-    font-size: 22px;
+.servicePG .box .service-card .title{
+    width: 80%;
+    font-size: 20px;
+}
+.servicePG .box .service-card .finTitle{
+    width: 70% !important;
 }
 .servicePG .box:hover .service-card{
     bottom: -100%;
@@ -1812,6 +1795,13 @@ form .inputBox{
     .carousel-inner{
         height: 500px !important;
     }
+    .captionDesc{
+        width: 90% !important;
+        line-height: 30px !important;
+    }
+    .captionDesc2{
+        display: none;
+    }
     .mobile-image{
         display: none !important;
     }
@@ -1834,7 +1824,9 @@ form .inputBox{
     }
     /* why choose us */
     .abtImg{
-        width: 100% !important;
+        width: 70% !important;
+        height: auto !important;
+        margin: auto !important;
     }
     /* project sect */
     .projects .projectCarousel{
@@ -1924,6 +1916,13 @@ form .inputBox{
     .benefitDesc .descContent{
         width: 70%;
     }
+    .benefit2 .form2{
+        width: 85% !important;
+        margin-left: 30px !important;
+    }
+    .benefit2 .form2 form{
+        width: auto !important;
+    }
     /* expert-sect */
     .expertSect .experts{
         grid-template-columns: 1fr 1fr;
@@ -1939,6 +1938,9 @@ form .inputBox{
     .servicePG .box .service-card .image{
         width: 40px !important;
         height: 40px !important;
+    }
+    .choose-section{
+        margin-bottom: 70px !important;
     }
     /* CONTACT PAGE */
     .contactCards{
@@ -1974,6 +1976,9 @@ form .inputBox{
     }
     .display-3 {
         font-size: 30px !important;
+    }
+    .captionX{
+        top: 15% !important;
     }
     /* service sect */
     .service:hover .service-menu{
@@ -2041,6 +2046,9 @@ form .inputBox{
 }
 
 @media screen and (max-width: 767px){
+    #main-nav .navbar-nav .XX{
+        display: block !important;
+    }
     .navbar-collapse {
         border-radius: 5px !important;
         margin-top: 10px !important;
@@ -2100,9 +2108,17 @@ form .inputBox{
     .benefitDesc .descContent{
         width: 60%;
     }
+    /* SERVICE PAGE */
+    .steps{
+        height: auto;
+        grid-template-columns: 1fr;
+    }
 }
 /* For Mobile View */
 @media screen and (max-width: 480px){
+    .pre{
+        display: none;
+    }
     .topNav{
         display: none;
     }
@@ -2120,6 +2136,10 @@ form .inputBox{
     }
     .carousel-caption{
         top: 40% !important;
+    }
+    .captionX{
+        width: 100%;
+        top: 30% !important;
     }
     .display-3 {
         font-size: 20px !important;
@@ -2149,7 +2169,7 @@ form .inputBox{
         grid-column-gap: 20px;
     }
     .service-section .box-container .box{
-        width: 17rem;
+        width: 95% !important;
     }
     .service-section .box-container .box .service-card .image{
         width: 50px;
@@ -2157,7 +2177,18 @@ form .inputBox{
     .service-section .box-container .box .service-card{
         height: 110px;
     }
-    
+    /* why choose us */
+    .chooseSect{
+        width: 90% !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+    .abtImg{
+        width: 100% !important;
+    }
+    .chooseSect .butY{
+        display: none !important;
+    }
     /* counter */
     .counter{
         flex-direction: column;
@@ -2197,10 +2228,10 @@ form .inputBox{
         grid-template-columns: 1fr ;
     }
     .clientSect .comments{
-    width: 320px;
-    height: 300px;
-    margin: auto !important;
-    margin-top: 30px !important;
+        width: 320px;
+        height: 300px;
+        margin: auto !important;
+        margin-top: 30px !important;
     }
     .clientSect .lastComment{
         padding-left: 0% !important;
@@ -2254,8 +2285,16 @@ form .inputBox{
         flex-direction: column;
         align-items: start;
     }
+    .benefitSect .visBtn{
+        display: none;
+    }
+    .benefit2 .form2{
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
     .benefitSect .benefit2 form{
-        margin-top: 20px !important;
+        margin-top: 0px !important;
+        width: auto !important;
     }
     .benefitSect .benButtons .benefitBtn{
         margin-bottom: 10px;
@@ -2280,8 +2319,8 @@ form .inputBox{
         bottom: -90px;
     }
     /* SERVICE PAGE */
-    .servicePG .box-container .box{
-        /* width: 17rem; */
+    .servicePG .box{
+        width: 100% !important;
     }
     .servicePG .box .service-card{
         height: 110px;
@@ -2338,6 +2377,9 @@ form .inputBox{
 
 /* for responsive. 320px devices */
 @media screen and (max-width: 320px){
+    .service-section .box-container .box{
+        width: auto !important;
+    }
     .clientSect .comments{
     width: 300px;
     height: 300px;
