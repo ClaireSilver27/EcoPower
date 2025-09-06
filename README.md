@@ -16,7 +16,8 @@ Eco Power is an interactive website designed to promote solar energy solutions, 
 ## 🛠 Tech Stack  
 - **HTML5**  
 - **CSS3**  
-- **JavaScript**  
+- **JavaScript**
+-  **Bootstrap**
 
 ---
 
